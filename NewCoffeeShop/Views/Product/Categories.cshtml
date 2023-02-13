@@ -1,0 +1,8 @@
+﻿@model List<string>
+<h1>Please pick a category</h1>
+@{
+    foreach(string c in Model)
+    {
+        <p><a asp-action ="ProductsByCategory" asp-route-ProductbyCategory="@c">@c</a></p>
+    }
+}
